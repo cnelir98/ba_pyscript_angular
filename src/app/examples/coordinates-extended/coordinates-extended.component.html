@@ -1,0 +1,19 @@
+<py-script id="map_py" src="../assets/code/scripts/map_extended.py"></py-script>
+
+<div class="container-all">
+  <h1>Distanzberechnung zwischen zwei Standorten</h1>
+  <div class="container-input-button">
+    <mat-form-field class="example-full-width">
+      <mat-label>Standort A</mat-label>
+      <input matInput placeholder="Standort A" [(ngModel)]="locationA" >
+    </mat-form-field>
+     <mat-form-field class="example-full-width">
+        <mat-label>Standort B</mat-label>
+        <input matInput placeholder="Standort B" [(ngModel)]="locationB">
+      </mat-form-field>
+      <button mat-raised-button (click)="callPyScript()" color="primary">Distanz berechnen!</button>
+  </div>
+
+  <div id="map"></div>
+  <h1> Distanz: {{route.distance.toFixed(2)}} km</h1>
+</div>

@@ -1,0 +1,26 @@
+.container-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .container-input-button{
+    width:100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+  }
+  
+  #map, #map div{
+    width:50%;
+  }
+  
+  .location{
+    display:flex;
+  }
+  
+  

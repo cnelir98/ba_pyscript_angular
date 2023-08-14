@@ -1,0 +1,18 @@
+<py-script src="../assets/code/scripts/map.py"></py-script>
+
+<div class="container-all">
+    <div class="container-input-button">
+    <mat-form-field class="example-full-width">
+    <mat-label>Latitude</mat-label>
+        <input matInput placeholder="Latitude" [(ngModel)]="coordinates.latitude">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+    <mat-label>Longitude</mat-label>
+        <input matInput placeholder="Longitude" [(ngModel)]="coordinates.longitude">
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" (click)="callPyScript()">Go!</button>
+    </div>
+    <div id="map"></div>
+</div>
